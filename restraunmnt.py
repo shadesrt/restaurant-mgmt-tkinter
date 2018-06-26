@@ -138,6 +138,7 @@ def Reset(): #function for clearing entries{textboxes}
     Cost.set("")
     Burger.set("")
     Sandwich.set("")
+    lblInfo2.config(text='')
 
 
 #info left
@@ -229,20 +230,20 @@ txtTotalCost = Entry(f1, font=('arial', 16, 'bold'), textvariable=Total, bd=10, 
 txtTotalCost.grid(row=5, column=3)
 
 # buttons
-btnTotal = Button(f1, padx=16, pady=8, bd=16, fg="black", font=('arial', 16, 'bold'), width=10, text="Total",
-                  bg="powder blue", command=Ref).grid(row=7, column=1)
+btnTotal = Button(f1, padx=8, pady=8, bd=16, fg="black", font=('arial', 16, 'bold'), width=10, text="Total",
+                  bg="grey", command=Ref).grid(row=7, column=1)
 
-btnSave = Button(f1, padx=16, pady=8, bd=16, fg="black", font=('arial', 16, 'bold'), width=10, text="Save",
-                  bg="powder blue", command=saveData).grid(row=7, column=2)
+btnSave = Button(f1, padx=8, pady=8, bd=16, fg="black", font=('arial', 16, 'bold'), width=10, text="Save",
+                  bg="green", command=saveData).grid(row=7, column=2)
 
-btnHistory = Button(f1, padx=16, pady=8, bd=16, fg="black", font=('arial', 16, 'bold'), width=10, text="History",
-                  bg="powder blue", command=checkData).grid(row=7, column=3)
+btnHistory = Button(f1, padx=8, pady=8, bd=16, fg="black", font=('arial', 16, 'bold'), width=10, text="History",
+                  bg="blue", command=checkData).grid(row=7, column=3)
 
-btnReset = Button(f1, padx=16, pady=8, bd=16, fg="black", font=('arial', 16, 'bold'), width=10, text="Reset",
-                  bg="powder blue", command=Reset).grid(row=7, column=4)
+btnReset = Button(f1, padx=8, pady=8, bd=16, fg="black", font=('arial', 16, 'bold'), width=10, text="Reset",
+                  bg="orange", command=Reset).grid(row=7, column=4)
 
-btnExit = Button(f1, padx=16, pady=8, bd=16, fg="black", font=('arial', 16, 'bold'), width=10, text="Exit",
-                 bg="powder blue", command=qExit).grid(row=7, column=5)
+btnExit = Button(f1, padx=8, pady=8, bd=16, fg="black", font=('arial', 16, 'bold'), width=10, text="Exit",
+                 bg="red", command=qExit).grid(row=7, column=5)
 
 root.mainloop()
 
