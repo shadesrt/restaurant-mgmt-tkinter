@@ -1,4 +1,4 @@
-# Python Introduction
+## Python Introduction
 
 # Restaurant Management Application
 
